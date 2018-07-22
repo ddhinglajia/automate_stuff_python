@@ -3,7 +3,7 @@
 import re, pyperclip
 
 phoneRegex = re.compile(r'''(
-    (\d{3}|\(\d{3}))?
+    (\d{3}|(\d{3}))?
     (\s|-|\.)?
     (\d{3})
     (\s|-|\.)?
@@ -15,8 +15,8 @@ emailRegex = re.compile(r'''(
     \w +
     (@) +
     [a-zA-Z0-9.-]+
-    (\.[a-zA-Z]{2,4}){
-    )''', r.VERBOSE)
+    (\.[a-zA-Z]{2,4})
+    )''', re.VERBOSE)
 
 clipText = str(pyperclip.paste())
 
