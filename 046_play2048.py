@@ -1,6 +1,7 @@
 #! /usr/bin/python3 
 from selenium import webdriver
-from selenium.webdriver.commmon.keys import keys
+from selenium.webdriver.common.keys  import Keys
+import selenium.webdriver.common.keys
 
 def play():
     url = "https://gabrielecirulli.github.io/2048/"
